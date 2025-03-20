@@ -1,9 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
+        Review[] reviews = {
+                new Review(4, "Good! Thx"),
+                new Review(3, "OK site"),
+                new Review(5, "Great!"),
+                new Review(2, "Poor! Bad."),
+                new Review(3, "")
+        };
+        ReviewAnalysis r = new ReviewAnalysis(reviews);
 
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
-        }
+        System.out.println(r.getAverageRating());
+        System.out.println(r.collectComments());
     }
 }

@@ -1,7 +1,7 @@
 public class Review {
+
     private int rating;
     private String comment;
-
 
     /**
      * Precondition: r >= 0
@@ -21,5 +21,5 @@ public class Review {
     public String getComment() {
         return comment;
     }
-// There may be instance variables, constructors, and methods that are          //not shown.
+
 }
